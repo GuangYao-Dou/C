@@ -67,13 +67,14 @@ int main ()
 	int i = 0;
 	int j = 0;
 	int len = 0 ;
-	//printf("请输入要计算的字符串");
+	//printf ("请输入一个字符串：\n");
 	char str [] = "";
-	scanf("%s",&str );
-	printf("%d",strlen(str));
-	for (i = 0; i < strlen(str); i++)
+	scanf("%s", &str );
+	printf("strlen: %d\n",strlen(str) );
+	printf("sizeof(): %d\n",sizeof(str));
+	for (i = 0; i < strlen(str);  i++)
 	{
-		for (j = i + 1; j < strlen(str); j++)
+		for (j = i + 1; j < strlen(str);  j++)
 		{
 			if (str[i] == str[j] && (j-i) >= len )
 			{
@@ -81,7 +82,7 @@ int main ()
 			}
 		}
 	}
-	return len ;
+	printf("len: %d\n", len) ;
 	system("pause");
 	return 0;
 }
