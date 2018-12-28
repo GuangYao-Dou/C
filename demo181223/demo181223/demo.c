@@ -161,7 +161,7 @@ int main()
 
 	system("cls");
 	show(arry); //向玩家展示落子后的棋盘状态
-	printf("电脑正在落子中......");
+	printf("电脑正在落子中......\n");
 	_sleep(1000);
 	turnComputer();//电脑落子
 	//判断胜负
@@ -175,11 +175,13 @@ int main()
 	{
 		printf("电脑获胜\n");
 		show(arry);
+		break;
 	}
 	else if (checkwinner() == 'h')
 	{
 		printf("和棋\n");
 		show(arry);
+		break;
 	}
 	system("cls");
 	}
