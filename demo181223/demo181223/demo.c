@@ -4,7 +4,7 @@
 #define _CRT_SECURE_NO_WARNINGS
 #define row 3
 #define col 3
-// 3*3的棋盘初始化；
+//3*3的棋盘初始化；
 //显示棋盘	show（）；
 //提示玩家落子
 //判定胜负  
@@ -115,7 +115,7 @@ char checkwinner()
 	else if(ergo() == 0)
 			return 'h';
 }
-//遍历数组
+//遍历数组判断有无空
 int ergo()
 {
 	int i = 0 ;
